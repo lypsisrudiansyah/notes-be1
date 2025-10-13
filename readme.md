@@ -5,7 +5,7 @@
 **Purpose:** Create a new note.  
 **Expected:** Should return `201 Created` and `noteId` in response.
 
-| Test Case | Assertion | Result |
+| UL | Assertion | Result |
 |------------|------------|--------|
 | ⚫ | Response status code should be 201 | ✅ Passed |
 | ⚫ | Response body should be JSON object | ✅ Passed |
@@ -23,7 +23,7 @@
 **Purpose:** Retrieve details of a specific note.  
 **Expected:** Should return `200 OK` and correct note data.
 
-| Test Case | Assertion | Result |
+| UL | Assertion | Result |
 |------------|------------|--------|
 | ⚫ | Response status code should be 200 | ✅ Passed |
 | ⚫ | Response should contain `status` property | ✅ Passed |
@@ -42,7 +42,7 @@
 **Purpose:** Update an existing note.  
 **Expected:** Should return `200 OK` and confirm update.
 
-| Test Case | Assertion | Result |
+| UL | Assertion | Result |
 |------------|------------|--------|
 | ⚫ | Response status code should be 200 | ✅ Passed |
 | ⚫ | Response should contain `status` property | ✅ Passed |
@@ -60,7 +60,7 @@
 **Purpose:** Retrieve all notes.  
 **Expected:** Should return `200 OK` and an array of notes.
 
-| Test Case | Assertion | Result |
+| UL | Assertion | Result |
 |------------|------------|--------|
 | ⚫ | Response status code should be 200 | ✅ Passed |
 | ⚫ | Response should contain `status` property | ✅ Passed |
@@ -78,7 +78,7 @@
 **Purpose:** Delete a note by ID.  
 **Expected:** Should return `200 OK` and confirm deletion.
 
-| Test Case | Assertion | Result |
+| UL | Assertion | Result |
 |------------|------------|--------|
 | ⚫ | Response status code should be 200 | ✅ Passed |
 | ⚫ | Response should contain `status` property | ✅ Passed |
