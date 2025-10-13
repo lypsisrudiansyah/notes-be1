@@ -100,7 +100,6 @@
 | **Passed** | ✅ 31 |
 | **Failed** | ❌ 0 |
 | **Total Duration** | 16 ms |
-| **Environment** | Local (`NODE_ENV=development`) |
 
 ---
 
