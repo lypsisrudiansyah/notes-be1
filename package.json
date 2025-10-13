@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@hapi/hapi": "^21.4.3",
+    "nanoid": "^5.1.6"
+  },
+  "name": "catatappdll",
+  "version": "1.0.0",
+  "description": "note App",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/server.js",
+    "lint": "eslint ./src"
+  },
+  "author": "Rudiansyah",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^9.37.0",
+    "nodemon": "^3.1.10"
+  }
+}
