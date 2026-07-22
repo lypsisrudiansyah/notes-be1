@@ -19,7 +19,8 @@ BG_BLUE=$(tput setab 4)
 BOLD=$(tput bold)
 RESET=$(tput sgr0)
 
-echo "${CYAN}${BOLD}"                                         |_|         "
+echo "${CYAN}${BOLD}"
+echo "                                            |_|         "
 echo "${RESET}"
 echo "${MAGENTA}${BOLD}>>> COMMAND CENTER: GSP382 CHALLENGE LAB INITIATED <<<${RESET}"
 echo ""
