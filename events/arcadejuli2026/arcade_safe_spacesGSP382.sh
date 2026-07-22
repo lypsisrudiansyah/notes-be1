@@ -4,7 +4,7 @@ echo "Mitigate Threats and Vulnerabilities with Security Command Center: Challen
 clear
 
 # ==============================================================================
-# lkaoskoasd - asdasd & asd (PASTE-SAFE)
+#  - BRANDING & COLORS (PASTE-SAFE)
 # ==============================================================================
 GREEN=$(tput setaf 2)
 YELLOW=$(tput setaf 3)
@@ -19,9 +19,6 @@ BG_BLUE=$(tput setab 4)
 BOLD=$(tput bold)
 RESET=$(tput sgr0)
 
-echo "${CYAN}${BOLD}"
-echo "                                            |_|         "
-echo "${RESET}"
 echo "${MAGENTA}${BOLD}>>> COMMAND CENTER: GSP382 CHALLENGE LAB INITIATED <<<${RESET}"
 echo ""
 
@@ -111,7 +108,7 @@ echo ""
 # EMBEDDED UI INSTRUCTIONS
 # ==============================================================================
 echo "${BG_MAGENTA}${WHITE}${BOLD}                                                                            ${RESET}"
-echo "${BG_MAGENTA}${WHITE}${BOLD}  🚀 lkaoskoasd: REQUIRED MANUAL UI STEPS TO COMPLETE CHALLENGE LAB       ${RESET}"
+echo "${BG_MAGENTA}${WHITE}${BOLD}  🚀 : REQUIRED MANUAL UI STEPS TO COMPLETE CHALLENGE LAB       ${RESET}"
 echo "${BG_MAGENTA}${WHITE}${BOLD}                                                                            ${RESET}"
 echo ""
 
