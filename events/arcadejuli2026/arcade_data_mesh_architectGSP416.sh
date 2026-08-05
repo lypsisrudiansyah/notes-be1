@@ -1,10 +1,10 @@
 
 
-echo "Working with JSON, Arrays, and Structs in BigQuery - GSP416"
 
 #!/bin/bash
 
 clear
+echo "Working with JSON, Arrays, and Structs in BigQuery - GSP416"
 
 # ==============================================================================
 # Color Variables & Branding
