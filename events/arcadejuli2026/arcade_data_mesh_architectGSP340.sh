@@ -1,11 +1,40 @@
 
 echo "Build a Data Warehouse with BigQuery: Challenge Lab - GSP340"
 
+#!/bin/bash
+
+# Define color variables
+BLACK=`tput setaf 0`
+RED=`tput setaf 1`
+GREEN=`tput setaf 2`
+YELLOW=`tput setaf 3`
+BLUE=`tput setaf 4`
+MAGENTA=`tput setaf 5`
+CYAN=`tput setaf 6`
+WHITE=`tput setaf 7`
+
+BG_BLACK=`tput setab 0`
+BG_RED=`tput setab 1`
+BG_GREEN=`tput setab 2`
+BG_YELLOW=`tput setab 3`
+BG_BLUE=`tput setab 4`
+BG_MAGENTA=`tput setab 5`
+BG_CYAN=`tput setab 6`
+BG_WHITE=`tput setab 7`
+
+BOLD=`tput bold`
+RESET=`tput sgr0`
+
+clear
+echo "Build a Data Warehouse with BigQuery: Challenge Lab - GSP340"
+
+
+# Set dataset names
 export DATASET_NAME_1=covid
 export DATASET_NAME_2=covid_data
 
 # Task 1: Create dataset and partitioned table
-echo "${CYAN}${BOLD}TASK 1: Creating COVID dataset and partitioned table${RESET}"
+echo "${CYAN}${BOLD}TASK 1: Creating COVID dataset    ddd and partitioned table${RESET}"
 bq mk --dataset $DEVSHELL_PROJECT_ID:covid
 sleep 10
 
@@ -108,7 +137,7 @@ echo "${GREEN}Task 4 completed successfully!${RESET}"
 echo
 
 # Bonus Task: Update mobility data
-echo "${CYAN}${BOLD}BONUS TASK: Updating mobility data${RESET}"
+echo "${CYAN}${BOLD}BONUS TASK: Updating   sadasd  mobility data${RESET}"
 echo "${YELLOW}Updating mobility metrics...${RESET}"
 bq query --use_legacy_sql=false \
 "
@@ -170,6 +199,21 @@ FROM \`bigquery-public-data.covid19_google_mobility.mobility_report\`"
 
 # Data cleaning
 echo "${YELLOW}Cleaning data by removing NULL values...${RESET}"
+# bq query --use_legacy_sql=false \
+# "DELETE FROM covid_data.oxford_policy_tracker_by_countries
+# WHERE population IS NULL OR country_area IS NULL"
+
 bq query --use_legacy_sql=false \
-"DELETE FROM covid_data.oxford_policy_tracker_by_countries
-WHERE population IS NULL AND country_area IS NULL"
+"DELETE FROM \`covid_data.oxford_policy_tracker_by_countries\`
+WHERE population IS NULL;"
+
+# Task 4: Hapus baris dengan country_area NULL
+bq query --use_legacy_sql=false \
+"DELETE FROM \`covid_data.oxford_policy_tracker_by_countries\`
+WHERE country_area IS NULL;"
+
+# Completion message
+echo
+echo "${GREEN}${BOLD}====================================================================${RESET}"
+echo "${GREEN}${BOLD}             LAB good!                  ${RESET}"
+echo "${GREEN}${BOLD}====================================================================${RESET}"
