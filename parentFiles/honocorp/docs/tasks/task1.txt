@@ -1,0 +1,10 @@
+@.loc\prd_saas_honohub.md
+Kita Punya PRD tolong Dikerjakan dan Tandai jika Sudah selesai (Tandainya Bulk saja di akhir jadi ngga bolak balik 1 per satu)
+Target : Fase 1.1 - Fase 2.16
+
+
+
+disini realitasnya juga cara aku connect ke DB Mariadb / mysql adalah
+di laptopku ini
+
+127.0.0.1 3306 root password 1234, Jaga Privasi
