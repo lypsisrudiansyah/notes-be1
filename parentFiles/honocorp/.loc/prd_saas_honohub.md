@@ -100,24 +100,24 @@ honocorp-backend/
 ## 6. Todo List 100 Langkah Pembangunan (Node.js & MySQL)
 
 ### Fase 1: Setup, Runtime, dan Routing Dasar
-- [ ] 1. Inisialisasi proyek Node.js (`npm init -y`) dan instalasi TypeScript (`npm i -D typescript tsx`).
-- [ ] 2. Instalasi framework dasar: `npm i hono @hono/node-server`.
-- [ ] 3. Buat file `src/server.ts` dan jalankan *server* HTTP sederhana di port 3000.
-- [ ] 4. Eksplorasi objek `Context` (`c`): Coba kembalikan respons JSON statis.
-- [ ] 5. Susun struktur folder sesuai spesifikasi PRD di atas.
-- [ ] 6. Buat file `src/http/routes/index.route.ts` untuk menampung endpoint dasar (Health Check).
-- [ ] 7. Pisahkan *handler* (Controller) dari definisi *router* untuk rute profil pengguna.
-- [ ] 8. Implementasi Hono Logger Middleware bawaan di `app.ts`.
-- [ ] 9. Implementasi Hono CORS Middleware untuk integrasi frontend.
-- [ ] 10. Buat `src/config/env.ts` untuk memvalidasi `process.env` menggunakan Zod.
+- [x] 1. Inisialisasi proyek Node.js (`npm init -y`) dan instalasi TypeScript (`npm i -D typescript tsx`).
+- [x] 2. Instalasi framework dasar: `npm i hono @hono/node-server`.
+- [x] 3. Buat file `src/server.ts` dan jalankan *server* HTTP sederhana di port 3000.
+- [x] 4. Eksplorasi objek `Context` (`c`): Coba kembalikan respons JSON statis.
+- [x] 5. Susun struktur folder sesuai spesifikasi PRD di atas.
+- [x] 6. Buat file `src/http/routes/index.route.ts` untuk menampung endpoint dasar (Health Check).
+- [x] 7. Pisahkan *handler* (Controller) dari definisi *router* untuk rute profil pengguna.
+- [x] 8. Implementasi Hono Logger Middleware bawaan di `app.ts`.
+- [x] 9. Implementasi Hono CORS Middleware untuk integrasi frontend.
+- [x] 10. Buat `src/config/env.ts` untuk memvalidasi `process.env` menggunakan Zod.
 
 ### Fase 2: Database Layer (MySQL & Drizzle)
-- [ ] 11. Instalasi dependensi: `npm i drizzle-orm mysql2` dan `npm i -D drizzle-kit`.
-- [ ] 12. Setup koneksi MySQL di `src/config/db.ts` menggunakan *connection pool* `mysql2/promise`.
-- [ ] 13. Buat konfigurasi `drizzle.config.ts` di *root directory*.
-- [ ] 14. Definisikan skema tabel `users` (id, name, email, password, role) di `src/db/schema/users.ts`.
-- [ ] 15. Jalankan `npx drizzle-kit generate` untuk membuat migrasi SQL.
-- [ ] 16. Jalankan `npx drizzle-kit push` atau tulis skrip migrasi khusus untuk mengeksekusi SQL ke database.
+- [x] 11. Instalasi dependensi: `npm i drizzle-orm mysql2` dan `npm i -D drizzle-kit`.
+- [x] 12. Setup koneksi MySQL di `src/config/db.ts` menggunakan *connection pool* `mysql2/promise`.
+- [x] 13. Buat konfigurasi `drizzle.config.ts` di *root directory*.
+- [x] 14. Definisikan skema tabel `users` (id, name, email, password, role) di `src/db/schema/users.ts`.
+- [x] 15. Jalankan `npx drizzle-kit generate` untuk membuat migrasi SQL.
+- [x] 16. Jalankan `npx drizzle-kit push` atau tulis skrip migrasi khusus untuk mengeksekusi SQL ke database.
 - [ ] 17. Buat Service CRUD dasar: Insert user baru menggunakan `db.insert().values()`.
 - [ ] 18. Buat Service pembacaan data: Ambil daftar user menggunakan `db.select().from()`.
 - [ ] 19. Definisikan tabel `projects` dan relasi *One-to-Many* (User has many Projects).
