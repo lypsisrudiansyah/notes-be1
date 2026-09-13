@@ -1,0 +1,67 @@
+Challenge scenario
+You're a junior cloud engineer who is just starting out in your career. So far you have been helping teams create and manage Google Cloud resources.
+
+You are expected to have the skills and knowledge for these tasks.
+
+Your challenge
+For this challenge, you are asked to use Google App Engine to deploy a basic web application in your choice of language (either Python, PHP, or Golang/Go).
+
+You need to:
+
+Connect to the lab-setup VM instance via SSH
+Download an application
+Deploy the application
+Update the code and redeploy the application
+Each task is described in detail below, good luck!
+
+Task 1. Connect to the VM and download the Hello World app
+In the Google Cloud Console, navigate to the Navigation menu (Navigation menu icon) and select Compute Engine > VM instances.
+
+In the list of VM instances, click SSH in the row for the lab-setup instance to open an SSH terminal.
+
+Note: Run all subsequent commands in this lab inside the SSH terminal connected to lab-setup.
+Download a simple Hello World app by running git clone <Repository_URL> according to your choice of language on the VM instance lab-setup at the $HOME directory (~/):
+
+Language	Repository	Target Sample Directory
+Python	https://github.com/GoogleCloudPlatform/python-docs-samples.git	python-docs-samples/appengine/standard_python3/hello_world
+PHP	https://github.com/GoogleCloudPlatform/php-docs-samples.git	php-docs-samples/appengine/standard/helloworld
+Golang/Go	https://github.com/GoogleCloudPlatform/golang-samples.git	golang-samples/appengine/go11x/helloworld
+Navigate to the directory containing the helloworld sample code.
+
+Click Check my progress to verify the objective.
+Download the Hello World app
+
+Task 2. Deploy your application
+For this task, you need to deploy the helloworld app to Google App Engine in the us-central region.
+
+Navigate from the root directory to where your application's app.yaml file is located.
+Note:
+Deploy the application to the App Engine standard environment.
+To prevent exceeding project instance quotas across deployments, limit maximum instances by appending automatic_scaling: max_instances: 1 to app.yaml:
+cat << 'EOF' >> app.yaml
+
+automatic_scaling:
+  max_instances: 1
+EOF
+If using PHP, update the runtime version in app.yaml to an active standard runtime (e.g., php83 or php82) using sed -i 's/php81/php83/g' app.yaml.
+Deploy the application to App Engine:
+gcloud app deploy --quiet
+Copied!
+View your application
+To launch and view the application in your browser, enter the following command:
+gcloud app browse
+Copied!
+Click on the link that is provided. Your application is deployed and you can read the default message in your browser.
+Click Check my progress to verify the objective.
+Deploy the application
+
+Task 3. Deploy updates to your application
+Update your application code (main.py, index.php, or helloworld.go) to change the default greeting message to Goodbye world!.
+
+Redeploy your application to Google App Engine:
+
+gcloud app deploy --quiet
+Copied!
+Click Check my progress to verify the objective.
+Deploy updates to your application
+
